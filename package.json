@@ -1,0 +1,14 @@
+{
+  "name": "wikimedia-stream-monitor",
+  "version": "1.0.0",
+  "description": "Design and implement an web-based user interface for monitoring the Wikimedia event stream. Client-Server setup where the client runs on port 3000 and the server on port 4000.",
+  "scripts": {
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "cd client && npm run start",
+    "server": "cd server && npm run start",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install "
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
